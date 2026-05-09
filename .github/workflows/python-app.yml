@@ -1,0 +1,17 @@
+name : Python CI
+on:
+  push:
+    branches: ["main]
+jobs:
+  bulid:
+    runs-on: ubuntu-latest
+    steps: 
+      -name: Checkout code
+       uses: actions/checkout@v4
+      -name: Set up Python
+       usues: actions/checkout@v5
+       with:
+         python-version: "3.13"
+        -name: Run Python file
+         run: python monitor.py
+         
