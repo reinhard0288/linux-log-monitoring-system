@@ -1,0 +1,4 @@
+May 9 10:10:01 server sshd[123]: Failed password for invalid user admin
+May 9 10:12:15 server sshd[124]: Accepted password for user john
+May 9 10:15:22 server sshd[125]: Failed password for invalid user test
+May 9 10:18:40 server sshd[126]: Failed password for invalid user root
