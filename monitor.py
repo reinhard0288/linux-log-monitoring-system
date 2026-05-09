@@ -2,7 +2,7 @@ import smtplib
 from email.message import EmailMessage
 def send_alert():
     sender_email = "kingreinhard8877@gmail.com"
-    app_password = "muarpshriynnzmvs"
+    app_password = "enbbzdongjtpzvyp"
     receiver_email = "siripakasaikumar02@gmail.com"
     msg = EmailMessage()
     msg["Subject"] = "Security Alert: Suspicious Login Activity"
