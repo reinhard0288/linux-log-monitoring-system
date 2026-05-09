@@ -1,18 +1,22 @@
-name : Python CI
+name: Python CI
+
 on:
   push:
     branches:
-      -main
+      - main
+
 jobs:
-  bulid:
+  build:
     runs-on: ubuntu-latest
-    steps: 
-      -name: Checkout code
-       uses: actions/checkout@v4
-      -name: Set up Python
-       usues: actions/checkout@v5
-       with:
-         python-version: "3.13"
-        -name: Run Python file
-         run: python monitor.py
-         
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Run Python file
+        run: python monitor.py
