@@ -1,3 +1,5 @@
+def send_alert():
+    print("EMAIL SEND TO ADMIN")
 print("Linux Server LOG MONITORING STARTED")
 log_file = "sample_log.txt"
 with open (log_file,"r") as file:
@@ -9,6 +11,7 @@ for line in lines:
     print(f"Total Failed Login Attempts: {failed_attempts}")
     if failed_attempts > 2:
         print("ALERT: Suspicious Activity Detected!")
+        send_alert()
     with open("report.txt", "w") as report:
         report.write(f"Failed Login Attempts: {failed_attempts}\n")
         if failed_attempts > 2:
